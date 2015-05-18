@@ -18,17 +18,29 @@
     src: url(font/Sintony-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'Ubuntu';
+    src: url(font/Ubuntu-Regular.ttf);
+}
+
 
 
 body{
-	/*font-family: 'Raleway';*//*
+	
+    font-family: 'Ubuntu',sans-serif;
+	/*
+	font-family: 'Raleway';
+		*/
 		
-	*/
+	
 	/* font-family: 'Calibri';*/
 	
-	    font-family: 'Sintony';
+	 /*   font-family: 'Sintony';*//*
+		 
+	 */
 	  width: 100vw;
   overflow-x: hidden;
+  font-size: 16px;
 	
 }
 
@@ -244,7 +256,7 @@ footer{
   margin-bottom: 5%;
 }
 
-.docName{
+.docId{
 	text-align: right;
 }
 
@@ -302,4 +314,78 @@ button.card-heading {
 .card ol{
 	  padding-left: 18px;
   margin-top: 1%;
+}
+
+i.fa.fa-bullhorn {
+  margin-right: 1%;
+}
+
+i.fa.fa-quote-right {
+  margin-left: 0.5%;
+}
+
+.event h4 {
+  margin-top: 5%;
+}
+
+.bgImg {
+  position: absolute;
+  height: 290px;
+  overflow: hidden;
+}
+
+.bgImg img{
+	width: 100%;
+	 margin-top: -17%;
+
+}
+
+.card.event {
+  width: 80%;
+  position: relative;
+  margin-left: 10%;
+  margin-top: 10%;
+    padding: 1% 5%;
+}
+
+.event p {
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+
+.schedule .card img{
+	width: 100%;
+}
+
+.date {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.location {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.eventLogo{
+	  width: 280px;
+}
+
+footer a:visited{
+	color: white;
+}
+
+.sponsorList .card{
+	min-height: 443px;
+}
+
+.filter{
+	  width: 213px;
+  padding: 0.2% 1%;
+  margin-bottom: 2%;
+}
+
+.filter option:hover{
+	background: #1f497d !important;
+	color: white;
 }

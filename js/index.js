@@ -26,6 +26,19 @@ $(document).ready(function(){
 		e.preventDefault();
 	});
 	
+	$(".filter").change(function(){
+		var selected=$(".filter option:selected").val();
+		if(selected=="all"){
+			$(".schedule .hide").removeClass("hide");
+		}
+		
+		else{
+			
+			$(".schedule .hide").removeClass("hide");
+			$(".schedule .col-lg-4").not("."+selected).addClass("hide");
+		}
+	});
+	
 	
 
 });
